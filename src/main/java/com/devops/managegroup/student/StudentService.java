@@ -31,7 +31,7 @@ public class StudentService {
 
     public Student findStudentById(Long id) {
         return studentRepository.findStudentById(id)
-                .orElseThrow(() -> new UserNotFoundException("User by id " + id + " was not found"));
+                .orElseThrow(() -> new UserNotFoundException("Student by id " + id + " was not found"));
     }
 
     public void deleteStudent(Long id){

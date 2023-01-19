@@ -57,7 +57,7 @@ public class Student implements Serializable {
     }
 
     public String generateMatricule(){
-        return firstname.toUpperCase().charAt(0) + lastName.toUpperCase().charAt(0) + "2023";
+        return firstname.charAt(0) + lastName.charAt(0) + "2023";
     }
 
     @Override
